@@ -1,6 +1,9 @@
+# bot/views.py
 from django.views import View
 from django.http import HttpResponse
 from django.conf import settings
+from django.views.decorators.csrf import csrf_exempt
+from django.utils.decorators import method_decorator
 from telegram import Update, Bot, ReplyKeyboardMarkup, KeyboardButton
 import json
 import asyncio
@@ -9,6 +12,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 
+@method_decorator(csrf_exempt, name='dispatch')
 class TelegramBotView(View):
     bot = Bot(token=settings.TELEGRAM_BOT_TOKEN)
 
