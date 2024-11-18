@@ -1,3 +1,93 @@
-.idea
-.venv
-*.sqllite3
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.pyo
+*.sqlite3
+db.sqlite3
+
+# If you are using PostgreSQL, MySQL, or other DBs, ignore their data files
+*.pgdata
+*.db
+
+# Ignore the media directory (located in the parent directory)
+media/
+
+# Ignore static files (if you collect static files via `collectstatic`)
+static/
+
+# Ignore local environment settings
+.env
+*.env
+
+# Ignore virtual environment directories
+env/
+venv/
+ENV/
+.venv/
+.ENV/
+
+# Ignore pipenv, poetry, or other environment management files
+Pipfile
+Pipfile.lock
+poetry.lock
+poetry.toml
+
+# Ignore IDE files
+# PyCharm
+.idea/
+*.iml
+
+# VSCode
+.vscode/
+
+# Ignore JetBrains IDEs files
+*.idea
+.idea/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore coverage reports
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Ignore testing output
+.tox/
+.nox/
+pytest_cache/
+__pycache__/
+
+# Ignore build files
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+MANIFEST
+
+# Ignore compiled static files (if using Webpack or other bundlers)
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn-debug.log*
+
+# Ignore backups
+*.bak
+*.swp
+*.swo
+~$*
